@@ -1,0 +1,12 @@
+import json
+
+
+#Créer la configuraton des tests avec les critères basics
+eval_config = {
+    "criteria" : {
+        "score_moy_trajectoire_outil" : 1.0,
+        "score_correspondance_reponse" : 0.8
+    }
+
+    
+}

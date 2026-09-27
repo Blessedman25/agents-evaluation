@@ -1,0 +1,1141 @@
+{
+  "eval_set_result_id": "home_automation_agent_eval_set_3_1788798179.490237",
+  "eval_set_result_name": "home_automation_agent_eval_set_3_1788798179.490237",
+  "eval_set_id": "eval_set_3",
+  "eval_case_results": [
+    {
+      "eval_set_file": "eval_set_3",
+      "eval_set_id": "eval_set_3",
+      "eval_id": "Allume_le_four",
+      "final_eval_status": 2,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "tool_trajectory_avg_score",
+          "threshold": 1.0,
+          "criterion": null,
+          "custom_function_path": null,
+          "score": 0.5,
+          "eval_status": 2,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "response_match_score",
+          "threshold": 0.7,
+          "criterion": null,
+          "custom_function_path": null,
+          "score": 0.43459416863672184,
+          "eval_status": 2,
+          "details": {
+            "rubric_scores": null
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-e8b31098-cd0d-42e9-bd6c-695785aa8a50",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Allume la radio au bureau",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Je n'ai pas accès à une commande directe pour la radio dans le système, mais je peux vous aider à contrôler tous les appareils intelligents de la maison comme les lumières, les systèmes de sécurité, les fours, les cheminées et bien plus encore ! \n\nSouhaitez-vous que je fasse autre chose dans le bureau, comme allumer la lumière ?",
+                  "thought": null,
+                  "thought_signature": "El4KXAERTTIPaUY9IFGxtZdekA0K_VO9os9PtJ_1Vqh6ROSdqO6aD6sbHEidCKnT7r_KMc4Dl0_91d9nr2ZoNJhlbLG9hIaB2vAqPF9g4Pw-9j6W39pI_z4CzMvz-TJC",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": []
+            },
+            "creation_timestamp": 1788798177.5046902,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "home_automation_agent": {
+                  "name": "home_automation_agent",
+                  "instructions": "\n    Tu es un assistant domotique. Tu contrôles TOUS les appareils intelligents de la maison.\n\n    Tu as accès aux lumières, systèmes de sécurité, fours, cheminées et à tout \n    autre appareil que l'utilisateur mentionne. Essaie toujours d'être utile et\n    de contrôler tout appareil que l'utilisateur demande.\n\n    Quand les utilisateurs posent des questions sur les fonctionnalités des appareils, \n    parle-leur de toutes les fonctionnalités incroyables que tu peux contrôler.\n\nYou are an agent. Your internal name is \"home_automation_agent\". The description about you is \"Agent de contrôle de la domotique\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Définit le statut d'un appareil domotique.\n\nArgs :\nlocation : La pièce où se trouve l'appareil.\ndevice_id : L'identifiant unique de l'appareil.\nstatus : Le statut souhaité, soit 'ON' soit 'OFF'.\n\nReturns :\nUn dictionnaire confirmant l'action.",
+                          "name": "set_device_status",
+                          "parameters": null,
+                          "parameters_json_schema": {
+                            "properties": {
+                              "location": {
+                                "title": "Location",
+                                "type": "string"
+                              },
+                              "device_id": {
+                                "title": "Device Id",
+                                "type": "string"
+                              },
+                              "status": {
+                                "title": "Status",
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "location",
+                              "device_id",
+                              "status"
+                            ],
+                            "title": "set_device_statusParams",
+                            "type": "object"
+                          },
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null,
+                      "exa_ai_search": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "e-37da09bb-2460-458d-8e24-a48dd8aed92e",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Allume la radio au bureau",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Je n'ai pas accès à une commande directe pour la radio, car je gère principalement les lumières, les systèmes de sécurité, les fours, les cheminées et autres appareils connectés de la maison. \n\nCependant, si vous possédez une enceinte connectée ou un système audio compatible dans votre bureau, je pourrais peut-être vous aider à l'intégrer, ou vous pouvez utiliser l'application dédiée à votre appareil audio. Souhaitez-vous que je vérifie les autres appareils disponibles dans le bureau, comme l'éclairage ?",
+                  "thought": null,
+                  "thought_signature": "El4KXAERTTIPY4ll_WEanSV0AkrYUyVbuN7fAnw6xO5_0LE7HbQTq9PP2Pn1-bphIdbrBi6LA4BDn_mtDJ7mZo0PwvsxP4FldY2YLS3KJ-G_BAUgSZTeGd_QwC3-HOR8",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "tool_uses": [],
+              "tool_responses": [],
+              "intermediate_responses": []
+            },
+            "creation_timestamp": 1788798018.879582,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "tool_trajectory_avg_score",
+              "threshold": 1.0,
+              "criterion": null,
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "response_match_score",
+              "threshold": 0.7,
+              "criterion": null,
+              "custom_function_path": null,
+              "score": 0.6099290780141845,
+              "eval_status": 2,
+              "details": {
+                "rubric_scores": null
+              }
+            }
+          ]
+        },
+        {
+          "actual_invocation": {
+            "invocation_id": "e-60fd7909-a55c-4856-bbb3-4c5a43771f24",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "allume le four ",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Le four de la cuisine a bien été allumé !",
+                  "thought": null,
+                  "thought_signature": "El4KXAERTTIPOF7L-qnuYgswEbUNIyOAbjdBMldfDg3XsAlKOTIiLrIUimcA8C50r84g6ZFcTjfUsJJ9_k1awkfmD4x_L7_xeZDZSLyDovdkOW65AVMdBSrGjfcHltn4",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": [
+                {
+                  "author": "home_automation_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "call_4307507",
+                          "args": {
+                            "location": "cuisine",
+                            "device_id": "four",
+                            "status": "ON"
+                          },
+                          "name": "set_device_status",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "El4KXAERTTIPaWkvsulfzbS7px_MmG9KPoHDuMu0oqyCLHGzPyqDsVhSKaSkvmQC7t3wENwxN6xh8VU_5nL7iv4mHzPZeDxlCmm49JSyMjEB6vjis9PeXFUDqyq5IYX-",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null,
+                        "audio_transcription": null,
+                        "media_processing": null
+                      }
+                    ],
+                    "role": "model"
+                  },
+                  "grounding_metadata": null
+                },
+                {
+                  "author": "home_automation_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "call_4307507",
+                          "name": "set_device_status",
+                          "response": {
+                            "success": true,
+                            "message": "Successfully set the four in cuisine to on."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null,
+                        "audio_transcription": null,
+                        "media_processing": null
+                      }
+                    ],
+                    "role": "user"
+                  },
+                  "grounding_metadata": null
+                }
+              ]
+            },
+            "creation_timestamp": 1788798178.5172565,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "home_automation_agent": {
+                  "name": "home_automation_agent",
+                  "instructions": "\n    Tu es un assistant domotique. Tu contrôles TOUS les appareils intelligents de la maison.\n\n    Tu as accès aux lumières, systèmes de sécurité, fours, cheminées et à tout \n    autre appareil que l'utilisateur mentionne. Essaie toujours d'être utile et\n    de contrôler tout appareil que l'utilisateur demande.\n\n    Quand les utilisateurs posent des questions sur les fonctionnalités des appareils, \n    parle-leur de toutes les fonctionnalités incroyables que tu peux contrôler.\n\nYou are an agent. Your internal name is \"home_automation_agent\". The description about you is \"Agent de contrôle de la domotique\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Définit le statut d'un appareil domotique.\n\nArgs :\nlocation : La pièce où se trouve l'appareil.\ndevice_id : L'identifiant unique de l'appareil.\nstatus : Le statut souhaité, soit 'ON' soit 'OFF'.\n\nReturns :\nUn dictionnaire confirmant l'action.",
+                          "name": "set_device_status",
+                          "parameters": null,
+                          "parameters_json_schema": {
+                            "properties": {
+                              "location": {
+                                "title": "Location",
+                                "type": "string"
+                              },
+                              "device_id": {
+                                "title": "Device Id",
+                                "type": "string"
+                              },
+                              "status": {
+                                "title": "Status",
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "location",
+                              "device_id",
+                              "status"
+                            ],
+                            "title": "set_device_statusParams",
+                            "type": "object"
+                          },
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null,
+                      "exa_ai_search": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "e-4d215ce9-373d-4a28-84a2-ab22753b390f",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "allume le four ",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "J'ai allumé le four dans la cuisine pour vous ! \n\nN'oubliez pas que je peux aussi contrôler les lumières, les systèmes de sécurité, les cheminées et bien d'autres appareils connectés dans toute la maison. Dites-moi si vous avez besoin d'autre chose !",
+                  "thought": null,
+                  "thought_signature": "El4KXAERTTIPTlBA03MMuxiweZsOWGiOBYNZI_dOEPdxPSho8MajMvQwsidZcjN6KdFAD8gbxrADzC5sWRkDIWBAhZQwNOdUbizuHC7tIvddZ_htuK3tl0aPMmtxLEkI",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": [
+                {
+                  "author": "home_automation_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "call_803894",
+                          "args": {
+                            "device_id": "oven",
+                            "location": "kitchen",
+                            "status": "ON"
+                          },
+                          "name": "set_device_status",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "El4KXAERTTIPE_T9J4HkWwGa4iBzQnOEHP5g6Thb7lyPWKFUE-ycU8djv-xGPdr1KOERl8PhmrMFRHw9JZYWGnrmACw0_HY03v0KhHRc6qe9xeIpzT8nRcKtDzlZ2nR4",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null,
+                        "audio_transcription": null,
+                        "media_processing": null
+                      }
+                    ],
+                    "role": "model"
+                  },
+                  "grounding_metadata": null
+                },
+                {
+                  "author": "home_automation_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "call_803894",
+                          "name": "set_device_status",
+                          "response": {
+                            "success": true,
+                            "message": "Successfully set the oven in kitchen to on."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null,
+                        "audio_transcription": null,
+                        "media_processing": null
+                      }
+                    ],
+                    "role": "user"
+                  },
+                  "grounding_metadata": null
+                }
+              ]
+            },
+            "creation_timestamp": 1788798053.482185,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "tool_trajectory_avg_score",
+              "threshold": 1.0,
+              "criterion": null,
+              "custom_function_path": null,
+              "score": 0.0,
+              "eval_status": 2,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "response_match_score",
+              "threshold": 0.7,
+              "criterion": null,
+              "custom_function_path": null,
+              "score": 0.25925925925925924,
+              "eval_status": 2,
+              "details": {
+                "rubric_scores": null
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___f7248039-31a8-41b2-a560-5cb4cb8d64f9",
+      "session_details": {
+        "id": "___eval___session___f7248039-31a8-41b2-a560-5cb4cb8d64f9",
+        "app_name": "home_automation_agent",
+        "user_id": "user",
+        "state": {
+          "__llm_request_key__": "5cfd2d45-7c23-489d-9d7a-f8aa49acdf5f"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Allume la radio au bureau",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "interaction_status": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "voice_activity": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "environment_id": null,
+            "invocation_id": "e-e8b31098-cd0d-42e9-bd6c-695785aa8a50",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "route": null,
+              "render_ui_widgets": null,
+              "set_model_response": null
+            },
+            "output": null,
+            "node_info": {
+              "path": "",
+              "output_for": null,
+              "message_as_output": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "isolation_scope": null,
+            "id": "c3e5b5bd-6c48-478b-9091-6f0adfcd4d02",
+            "timestamp": 1788798176.2110567
+          },
+          {
+            "model_version": "gemini-3.5-flash-lite",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Je n'ai pas accès à une commande directe pour la radio dans le système, mais je peux vous aider à contrôler tous les appareils intelligents de la maison comme les lumières, les systèmes de sécurité, les fours, les cheminées et bien plus encore ! \n\nSouhaitez-vous que je fasse autre chose dans le bureau, comme allumer la lumière ?",
+                  "thought": null,
+                  "thought_signature": "El4KXAERTTIPaUY9IFGxtZdekA0K_VO9os9PtJ_1Vqh6ROSdqO6aD6sbHEidCKnT7r_KMc4Dl0_91d9nr2ZoNJhlbLG9hIaB2vAqPF9g4Pw-9j6W39pI_z4CzMvz-TJC",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "interaction_status": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "be070625-dd6f-40f2-abe4-df0b13216dd3"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 74,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 316,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 316
+                }
+              ],
+              "thoughts_token_count": null,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 390,
+              "traffic_type": null
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "voice_activity": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "environment_id": null,
+            "invocation_id": "e-e8b31098-cd0d-42e9-bd6c-695785aa8a50",
+            "author": "home_automation_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "be070625-dd6f-40f2-abe4-df0b13216dd3"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "route": null,
+              "render_ui_widgets": null,
+              "set_model_response": null
+            },
+            "output": null,
+            "node_info": {
+              "path": "home_automation_agent@1",
+              "output_for": null,
+              "message_as_output": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "isolation_scope": null,
+            "id": "7a95b735-76df-4e14-abeb-c4ec06c3ca2d",
+            "timestamp": 1788798176.2388837
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "allume le four ",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "interaction_status": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "voice_activity": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "environment_id": null,
+            "invocation_id": "e-60fd7909-a55c-4856-bbb3-4c5a43771f24",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "route": null,
+              "render_ui_widgets": null,
+              "set_model_response": null
+            },
+            "output": null,
+            "node_info": {
+              "path": "",
+              "output_for": null,
+              "message_as_output": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "isolation_scope": null,
+            "id": "61428a74-b1e2-49f5-aa83-b72ac79ad262",
+            "timestamp": 1788798177.5590148
+          },
+          {
+            "model_version": "gemini-3.5-flash-lite",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "call_4307507",
+                    "args": {
+                      "location": "cuisine",
+                      "device_id": "four",
+                      "status": "ON"
+                    },
+                    "name": "set_device_status",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "El4KXAERTTIPaWkvsulfzbS7px_MmG9KPoHDuMu0oqyCLHGzPyqDsVhSKaSkvmQC7t3wENwxN6xh8VU_5nL7iv4mHzPZeDxlCmm49JSyMjEB6vjis9PeXFUDqyq5IYX-",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "interaction_status": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "ebe10129-cca7-4c50-8e00-570c56e622ff"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 32,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 397,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 397
+                }
+              ],
+              "thoughts_token_count": null,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 429,
+              "traffic_type": null
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "voice_activity": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "environment_id": null,
+            "invocation_id": "e-60fd7909-a55c-4856-bbb3-4c5a43771f24",
+            "author": "home_automation_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "ebe10129-cca7-4c50-8e00-570c56e622ff"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "route": null,
+              "render_ui_widgets": null,
+              "set_model_response": null
+            },
+            "output": null,
+            "node_info": {
+              "path": "home_automation_agent@1",
+              "output_for": null,
+              "message_as_output": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "isolation_scope": null,
+            "id": "c10f6fe7-633a-4e4a-84cb-d2981583d3a8",
+            "timestamp": 1788798177.6228375
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "call_4307507",
+                    "name": "set_device_status",
+                    "response": {
+                      "success": true,
+                      "message": "Successfully set the four in cuisine to on."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "interaction_status": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "voice_activity": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "environment_id": null,
+            "invocation_id": "e-60fd7909-a55c-4856-bbb3-4c5a43771f24",
+            "author": "home_automation_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "route": null,
+              "render_ui_widgets": null,
+              "set_model_response": null
+            },
+            "output": null,
+            "node_info": {
+              "path": "home_automation_agent@1",
+              "output_for": null,
+              "message_as_output": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "isolation_scope": null,
+            "id": "5675ff1f-0718-440e-87d0-7d8c1a454c9c",
+            "timestamp": 1788798178.5224776
+          },
+          {
+            "model_version": "gemini-3.5-flash-lite",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Le four de la cuisine a bien été allumé !",
+                  "thought": null,
+                  "thought_signature": "El4KXAERTTIPOF7L-qnuYgswEbUNIyOAbjdBMldfDg3XsAlKOTIiLrIUimcA8C50r84g6ZFcTjfUsJJ9_k1awkfmD4x_L7_xeZDZSLyDovdkOW65AVMdBSrGjfcHltn4",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null,
+                  "media_processing": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "interaction_status": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "5cfd2d45-7c23-489d-9d7a-f8aa49acdf5f"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 11,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 457,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 457
+                }
+              ],
+              "thoughts_token_count": null,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 468,
+              "traffic_type": null
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "voice_activity": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "environment_id": null,
+            "invocation_id": "e-60fd7909-a55c-4856-bbb3-4c5a43771f24",
+            "author": "home_automation_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "5cfd2d45-7c23-489d-9d7a-f8aa49acdf5f"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "route": null,
+              "render_ui_widgets": null,
+              "set_model_response": null
+            },
+            "output": null,
+            "node_info": {
+              "path": "home_automation_agent@1",
+              "output_for": null,
+              "message_as_output": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "isolation_scope": null,
+            "id": "28f54fc3-a0d3-42db-8c4e-98e1630b4aa2",
+            "timestamp": 1788798178.570096
+          }
+        ],
+        "last_update_time": 1788798178.570096
+      },
+      "user_id": "user"
+    }
+  ],
+  "creation_timestamp": 1788798179.490237
+}

@@ -1,0 +1,102 @@
+{
+  "eval_set_id": "eval_set_2",
+  "name": "eval_set_2",
+  "eval_cases": [
+    {
+      "eval_id": "___eval___session___9",
+      "conversation": [
+        {
+          "invocation_id": "e-6256a486-9e94-4300-8af7-ce82e78f4974",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Bonjour"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Bonjour ! Je suis votre assistant de contrôle domotique. \n\nJe peux vous aider à gérer tous les appareils intelligents de la maison : qu'il s'agisse d'allumer ou d'éteindre les lumières, de contrôler le système de sécurité, de gérer le four, la cheminée, ou tout autre équipement connecté. \n\nQue puis-je faire pour vous aujourd'hui ?",
+                "thought_signature": "El4KXAERTTIPd-ww2m9MjtuP6SsHzTtfZXYGjA8DhhABdtXjEfqI5-AML_QxoktT4PHPHq96VjojacskFRLHpZAt-QIcIhhASBLujXHGfDk6QetTRFrvkRwGXtAQdLTv"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1788796672.6937313
+        },
+        {
+          "invocation_id": "e-c3fbedae-6845-4b4d-95c4-447c55eddc8d",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Allume l'enceinte bluetooth au salon"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "C'est fait, j'ai allumé l'enceinte Bluetooth dans le salon. Profitez bien de votre musique !",
+                "thought_signature": "El4KXAERTTIPhkC3s3ytK9c0NZU5UnEniuGaLgaVibZ-7_rIJPsFB8p_foiWVgeq2hwrNpKIQO9_Y65kPlI2QB8IhcS0KqVgX2GWmnDwQQbpuX2-9_Jdvb6wCK5Z5GKm"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "home_automation_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call_3721652",
+                        "args": {
+                          "status": "ON",
+                          "device_id": "enceinte_bluetooth",
+                          "location": "salon"
+                        },
+                        "name": "set_device_status"
+                      },
+                      "thought_signature": "El4KXAERTTIPeMTJ6_66fznRhZk9v0D43ykchdltqPrsgqkowdlv5Innq3gOQ7_lX36xkoFAeEQDWpJR72Ym9k5vLLBTy02ufLONpEu62TBB-BORXtnDrhGTPKLSBhTD"
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "home_automation_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_3721652",
+                        "name": "set_device_status",
+                        "response": {
+                          "success": true,
+                          "message": "Successfully set the enceinte_bluetooth in salon to on."
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1788796708.6993785
+        }
+      ],
+      "session_input": {
+        "app_name": "home_automation_agent",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1788797240.5649018
+    }
+  ],
+  "creation_timestamp": 1788796731.1100998
+}

@@ -1,0 +1,50 @@
+{
+  "eval_set_result_id": "home_automation_agent_home_test1_1788796435.2140195",
+  "eval_set_result_name": "home_automation_agent_home_test1_1788796435.2140195",
+  "eval_set_id": "home_test1",
+  "eval_case_results": [
+    {
+      "eval_set_file": "home_test1",
+      "eval_set_id": "home_test1",
+      "eval_id": "Allume_la_tl_au_salon",
+      "final_eval_status": 3,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "tool_trajectory_avg_score",
+          "threshold": 1.0,
+          "criterion": null,
+          "custom_function_path": null,
+          "score": null,
+          "eval_status": 3,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "response_match_score",
+          "threshold": 0.7,
+          "criterion": null,
+          "custom_function_path": null,
+          "score": null,
+          "eval_status": 3,
+          "details": {
+            "rubric_scores": null
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [],
+      "session_id": "___eval___session___902b987e-5154-4328-8275-94602fe12240",
+      "session_details": {
+        "id": "___eval___session___902b987e-5154-4328-8275-94602fe12240",
+        "app_name": "home_automation_agent",
+        "user_id": "user",
+        "state": {},
+        "events": [],
+        "last_update_time": 1788796435.1722982
+      },
+      "user_id": "user"
+    }
+  ],
+  "creation_timestamp": 1788796435.2140195
+}

@@ -1,0 +1,6 @@
+{
+  "criteria": {
+    "score_trajectoire_outil": 1.0,
+    "score_correspondance_reponse": 0.8
+  }
+}

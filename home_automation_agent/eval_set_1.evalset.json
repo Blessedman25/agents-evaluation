@@ -1,0 +1,102 @@
+{
+  "eval_set_id": "eval_set_1",
+  "name": "eval_set_1",
+  "eval_cases": [
+    {
+      "eval_id": "Allume_la_radio_au_bureau",
+      "conversation": [
+        {
+          "invocation_id": "e-37da09bb-2460-458d-8e24-a48dd8aed92e",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Allume la radio au bureau"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Je n'ai pas accès à une commande directe pour la radio, car je gère principalement les lumières, les systèmes de sécurité, les fours, les cheminées et autres appareils connectés de la maison. \n\nCependant, si vous possédez une enceinte connectée ou un système audio compatible dans votre bureau, je pourrais peut-être vous aider à l'intégrer, ou vous pouvez utiliser l'application dédiée à votre appareil audio. Souhaitez-vous que je vérifie les autres appareils disponibles dans le bureau, comme l'éclairage ?",
+                "thought_signature": "El4KXAERTTIPY4ll_WEanSV0AkrYUyVbuN7fAnw6xO5_0LE7HbQTq9PP2Pn1-bphIdbrBi6LA4BDn_mtDJ7mZo0PwvsxP4FldY2YLS3KJ-G_BAUgSZTeGd_QwC3-HOR8"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1788798018.879582
+        },
+        {
+          "invocation_id": "e-4d215ce9-373d-4a28-84a2-ab22753b390f",
+          "user_content": {
+            "parts": [
+              {
+                "text": "allume le four "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "J'ai allumé le four dans la cuisine pour vous ! \n\nN'oubliez pas que je peux aussi contrôler les lumières, les systèmes de sécurité, les cheminées et bien d'autres appareils connectés dans toute la maison. Dites-moi si vous avez besoin d'autre chose !",
+                "thought_signature": "El4KXAERTTIPTlBA03MMuxiweZsOWGiOBYNZI_dOEPdxPSho8MajMvQwsidZcjN6KdFAD8gbxrADzC5sWRkDIWBAhZQwNOdUbizuHC7tIvddZ_htuK3tl0aPMmtxLEkI"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "home_automation_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call_803894",
+                        "args": {
+                          "device_id": "oven",
+                          "location": "kitchen",
+                          "status": "ON"
+                        },
+                        "name": "set_device_status"
+                      },
+                      "thought_signature": "El4KXAERTTIPE_T9J4HkWwGa4iBzQnOEHP5g6Thb7lyPWKFUE-ycU8djv-xGPdr1KOERl8PhmrMFRHw9JZYWGnrmACw0_HY03v0KhHRc6qe9xeIpzT8nRcKtDzlZ2nR4"
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "home_automation_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_803894",
+                        "name": "set_device_status",
+                        "response": {
+                          "success": true,
+                          "message": "Successfully set the oven in kitchen to on."
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1788798053.482185
+        }
+      ],
+      "session_input": {
+        "app_name": "home_automation_agent",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1788798278.7828147
+    }
+  ],
+  "creation_timestamp": 1788796636.6680555
+}
